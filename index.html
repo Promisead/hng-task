@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intern's Information</title>
+    <title>Promise Champion's Info</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,11 +15,27 @@
         data-testid="slackDisplayImage"
       />
       <p data-testid="currentDayOfTheWeek">Thursday</p>
-      <p data-testid="currentUTCTime">1662565200000</p>
+      <p data-testid="currentUTCTime">Fetching UTC time...</p>
       <p data-testid="myTrack">Frontend</p>
       <a href="https://github.com/Promisead/hng-task" data-testid="githubURL"
         >GitHub Repository</a
       >
     </div>
+
+    <!--  <script>
+      // JavaScript to update current UTC time
+      function updateUTCTime() {
+        const currentTimeMillis = new Date().getTime();
+        const utcTimeElement = document.getElementById("currentUTCTime");
+        utcTimeElement.textContent = currentTimeMillis.toString();
+      }
+
+      // Update time on page load
+      updateUTCTime();
+
+      // Update time every second (optional)
+      setInterval(updateUTCTime, 1000);
+    </script> -->
+    <script src="script.js"></script>
   </body>
 </html>
